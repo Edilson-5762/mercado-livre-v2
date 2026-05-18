@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #FDE600;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.logo {
+    height: 84px;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    height: 34px;
+}
+
+.search-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    height: 34px;
+}
+
+.search-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.hero {
+    background-image: url("https://http2.mlstatic.com/D_NQ_963172-MLA97798572334_112025-OO.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+    height: 400px;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product-card:hover {
+    transform: translateY(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.product-price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-discount {
+    font-size: 14px;
+    color: #027900;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid #FDE600;
+}
+
+.footer p {
+    color: #333;
+    font-size: 14px;
+}
+
+/* Responsivo para tablets */
+@media (max-width: 768px) {
+    .logo {
+        height: 70px;
+    }
+
+    .search-input {
+        min-width: 150px;
+        font-size: 14px;
+    }
+
+    .search-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .product-price {
+        font-size: 24px;
+    }
+
+    .hero {
+        height: 300px;
+        padding-bottom: 30px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+/* Responsivo para celulares */
+@media (max-width: 480px) {
+    .container {
+        padding: 8px;
+    }
+
+    .logo {
+        height: 60px;
+        margin-bottom: 8px;
+    }
+
+    .search-container {
+        gap: 3px;
+    }
+
+    .search-input {
+        min-width: 120px;
+        padding: 8px;
+        font-size: 14px;
+        height: 32px;
+    }
+
+    .search-btn {
+        padding: 8px 12px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-image {
+        height: 180px;
+        object-fit: contain;
+    }
+
+    .product-title {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    .product-discount {
+        font-size: 12px;
+    }
+
+    .hero {
+        height: 200px;
+        padding-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+
+product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: block;
+}
+
+
+
+@media (min-width: 600px) {
+    .product-image {
+        height: 250px;
+        object-fit: contain;
+    }
+}
+
+
+
+
+
+const products=[ {
+    id: 1,
+        title: "Smartphone Samsung Galaxy A54",
+        price: 1899.99,
+        discount: 15,
+        image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 2,
+        title: "Notebook Lenovo IdeaPad",
+        price: 2999.90,
+        discount: 20,
+        image: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 3,
+        title: "Smart TV LG 50 4K",
+        price: 2299.00,
+        discount: 10,
+        image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 4,
+        title: "Tênis Nike Air Max",
+        price: 399.99,
+        discount: 25,
+        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 5,
+        title: "Fone JBL Bluetooth",
+        price: 199.90,
+        discount: 30,
+        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 6,
+        title: "Cadeira Gamer ThunderX3",
+        price: 899.00,
+        discount: 18,
+        image: "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 7,
+        title: "Console PlayStation 5",
+        price: 3999.99,
+        discount: 5,
+        image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 8,
+        title: "Apple Watch Series 8",
+        price: 2899.00,
+        discount: 12,
+        image: "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 9,
+        title: "Tablet Samsung Galaxy Tab",
+        price: 2199.90,
+        discount: 15,
+        image: "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 10,
+        title: "Câmera Canon EOS Rebel",
+        price: 2699.00,
+        discount: 8,
+        image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 11,
+        title: "Mouse Gamer Logitech",
+        price: 249.90,
+        discount: 20,
+        image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop"
+}
+
+    {
+    id: 12,
+        title: "Teclado Mecânico RGB",
+        price: 449.90,
+        discount: 22,
+        image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=400&fit=crop"
+}
+
+];
+
+// Função para remover acentos
+function removeAccents(text) {
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function formatPrice(price) {
+    return price.toLocaleString('pt-BR', {
+        style: 'currency', currency: 'BRL'
+    })
+}
+
+function createProductCard(product) {
+    return ` <div class="product-card"><img src="${product.image}" alt="${product.title}" class="product-image"><h3 class="product-title">$ {
+        product.title
+    }
+
+    </h3><div class="product-price">$ {
+        formatPrice(product.price)
+    }
+
+    </div><div class="product-discount">$ {
+        product.discount
+    }
+
+    % OFF</div></div>`
+}
+
+function renderProduct(products) {
+    const grid=document.getElementById('productsGrid') grid.innerHTML=products.map(createProductCard).join('')
+}
+
+function searchProducts() {
+    const searchInput=document.getElementById('searchInput').value.toLowerCase() const searchNormalized=removeAccents(searchInput) const filteredProducts=products.filter(product=> {
+            const titleNormalized=removeAccents(product.title.toLowerCase()) return titleNormalized.includes(searchNormalized)
+        }) renderProduct(filteredProducts)
+}
+
+document.addEventListener('DOMContentLoaded', ()=> {
+        renderProduct(products) document.getElementById('searchBtn').addEventListener('click', searchProducts) // Buscar ao pressionar Enter
+
+        document.getElementById('searchInput').addEventListener('keypress', (e)=> {
+                if (e.key==='Enter') {
+                    searchProducts()
+                }
+            })
+    }
+
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        display: block;
+    }
+
+
+    @media (min-width: 600px) {
+        .product-image {
+            height: 250px;
+            object-fit: contain;
+        }
+    }
