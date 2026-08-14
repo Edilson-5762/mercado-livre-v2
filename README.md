@@ -1,74 +1,53 @@
 # 🛒 Mercado Livre Clone
 
-<p align="center">
-  <a href="https://mercado-livre-v2.vercel.app">🔗 Ver Demo Online</a>
-</p>
+> réplica front-end da home do Mercado Livre, com busca de produtos em tempo real, sem frameworks
 
-## 📌 Sobre o Projeto
-
-Este projeto é uma réplica front-end da interface do Mercado Livre, desenvolvida como
-desafio pessoal de estudo para aprimorar habilidades de HTML, CSS e JavaScript puro,
-sem o uso de frameworks ou bibliotecas externas.
-
-O objetivo é simular componentes reais de um e-commerce de grande escala (header, busca,
-listagem de produtos, cards, ofertas), aplicando boas práticas de estruturação,
-responsividade e organização de código.
-
-> ⚠️ **Aviso importante:** Este é um projeto **exclusivamente educacional e de portfólio**,
-> sem qualquer fim comercial, lucrativo ou associação oficial com o Mercado Livre.
-> O objetivo é único e exclusivamente treinar e desafiar meus conhecimentos técnicos,
-> utilizando uma marca reconhecida como referência de UI/UX para elevar o nível do desafio.
-> Nenhum dado, backend ou funcionalidade real de compra está implementado.
-
-## 🚀 Tecnologias Utilizadas
-
-- **HTML5** — estruturação semântica do conteúdo
-- **CSS3** — estilização, layout e Media Queries para responsividade
-- **JavaScript** — interatividade e manipulação do DOM
-
-## 📱 Responsividade
-
-O projeto é **100% responsivo**, adaptando-se a qualquer tamanho de tela através de
-**Media Queries**, garantindo uma boa experiência tanto em desktops quanto em
-dispositivos móveis (mobile-first approach).
-
-## ✨ Funcionalidades
-
-- Header fixo com logo, campo de busca e navegação
-- Listagem dinâmica de produtos em cards
-- Exibição de preços, descontos e ofertas do dia
-- Layout adaptável para diferentes resoluções (desktop, tablet e mobile)
-
-## 🔧 Como Executar Localmente
-
-```bash
-# Clone este repositório
-git clone https://github.com/seu-usuario/mercado-livre-clone.git
-
-# Acesse a pasta do projeto
-cd mercado-livre-clone
-
-# Abra o arquivo index.html no navegador
+```text
+┌─ FICHA TÉCNICA ─────────────────────────────
+│ PROJETO   Mercado Livre Clone
+│ STATUS    ● Ativo
+│ STACK     HTML5 · CSS3 · JavaScript
+│ TIPO      Web / Front-end
+│ DEMO      mercado-livre-v2.vercel.app
+└──────────────────────────────────────────────
 ```
 
-Ou acesse diretamente a versão publicada: [mercado-livre-v2.vercel.app](https://mercado-livre-v2.vercel.app)
+🔗 [Ver demo](https://mercado-livre-v2.vercel.app) · 📂 parte do [Portfólio de Edilson Moraes](https://porfifolio-theta.vercel.app)
 
-## 🎯 Objetivo de Aprendizado
+## Sobre o projeto
 
-Este projeto fez parte de um desafio pessoal para:
+Clone front-end da página inicial do Mercado Livre, feito durante o curso DevClub como desafio de fixação de HTML, CSS e JavaScript puro. A página monta a listagem de produtos ("Ofertas do dia") dinamicamente a partir de um array de dados em JavaScript, renderizando cards com imagem, título, preço formatado em real (`Intl`/`toLocaleString`) e percentual de desconto. O layout é construído com CSS Grid (`auto-fit`/`minmax`) para os cards e usa media queries em dois breakpoints (768px e 480px) para se adaptar a tablets e celulares.
 
-- Aprofundar conhecimentos em CSS Grid/Flexbox
-- Praticar responsividade avançada com Media Queries
-- Estruturar um projeto de front-end de forma organizada e escalável
-- Simular a complexidade de interfaces de plataformas reais de e-commerce
+## Funcionalidades
 
-## 👤 Autor
+- Header fixo com logo e campo de busca
+- Catálogo de 12 produtos renderizado dinamicamente via JavaScript (`renderProduct`)
+- Busca por texto que filtra os produtos pelo título em tempo real (`searchProducts`)
+- Formatação de preços em Real (BRL) com `toLocaleString`
+- Exibição de percentual de desconto por produto
+- Grid de produtos responsivo, com breakpoints dedicados para tablet e mobile
+- Efeito de hover nos cards de produto
 
-Desenvolvido por **Edilson**
+## Stack
 
-- [LinkedIn](https://www.linkedin.com/in/edilson-moraes-047128408/)
-- [GitHub](https://github.com/Edilson-5762/)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## 📄 Licença
+## Como rodar localmente
 
-Este projeto está sob a licença MIT e é de uso livre para fins de estudo.
+```bash
+# clone este repositório
+git clone https://github.com/Edilson-5762/mercado-livre-v2.git
+
+# entre na pasta do projeto
+cd mercado-livre-v2
+
+# abra o index.html diretamente no navegador
+# ou sirva com uma extensão como Live Server (VSCode)
+```
+
+---
+
+**[Edilson Moraes](https://github.com/Edilson-5762)** — Full Stack Developer · Data Analyst em formação
+[Portfólio](https://porfifolio-theta.vercel.app) · [LinkedIn](https://www.linkedin.com/in/edilson-moraes-047128408)
